@@ -81,18 +81,22 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-table {
+.file-list table {
     width: 100%;
     border-collapse: collapse;
 }
 
-table, th, td {
+.file-list table, th, td {
     border: 1px solid #dddddd;
 }
 
-th, td {
+.file-list th, .file-list td {
     padding: 8px;
     text-align: left;
+}
+
+.file-list tr:hover {
+    background-color: #f1f1f1;
 }
 
 .readme {
@@ -153,7 +157,7 @@ th, td {
     align-items: center;
 }
 
-/* Grid kullanımıı */
+/* Grid kullanımı */
 .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
