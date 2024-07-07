@@ -27,7 +27,7 @@ body {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     gap: 1rem;
     padding: 1rem;
 }
@@ -38,11 +38,85 @@ body {
     border-radius: 5px;
 }
 
+.languages {
+    margin-top: 1rem;
+}
+
+.language-bar {
+    display: flex;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+.language.html {
+    background-color: #e34c26;
+}
+
+.language.css {
+    background-color: #264de4;
+}
+
+.language.js {
+    background-color: #f1e05a;
+}
+
 .file-list {
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+.readme {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 1rem;
+    text-align: center;
+}
+
+.readme-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.readme-content button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .footer {
@@ -79,9 +153,9 @@ body {
     align-items: center;
 }
 
-/* Grid kullanımı */
+/* Grid kullanımıı */
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     gap: 1rem;
 }
